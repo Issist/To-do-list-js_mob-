@@ -8,7 +8,7 @@ export default class ToDoList {
     }
 
     clearList(){
-        this.list = [];
+        this._list = [];
     }
 
     addItemToList(itemObj){
@@ -17,8 +17,8 @@ export default class ToDoList {
 
     removeItemFromList(id) {
         const list = this._list;
-        for (let i = 0; i < this._list.length; i++) {
-            if (list[i]._id === id) {
+        for (let i = 0; i < list.length; i++) {
+            if (list[i]._id == id) {
                 list.splice(i, 1);
                 break;
             }

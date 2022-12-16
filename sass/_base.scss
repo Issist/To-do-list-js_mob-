@@ -3,11 +3,11 @@ $background-color: #4a90e2;
 $conteiner-bgcolor: #f2f2f2;
 $conteiner-bordercolor: #000;
 $textbox-boredercolor: #fff;
-$button-textcolor: #000;
+$button-textcolor: #fff;
 $add-button-color: #4caf50;
 $clear-button-color: #9f6060;
 
-@mixin mp($size) {
+@mixin mq($size) {
     @media only screen and (min-width: $size) {
         @content;
     }
@@ -25,7 +25,7 @@ html, body {
     color: $default-font-color;
     width: 100%;
     min-height: 100%;
-    @include mp(768px) {
+    @include mq(768px) {
         font-size: 22px;
     }
 }
